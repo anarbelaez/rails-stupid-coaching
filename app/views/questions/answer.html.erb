@@ -1,3 +1,29 @@
-<h1>Coach answer...</h1>
-<%= "Your question is... #{@question}" %>
+<h2 class="fst-italic fw-bold">Chat with your stupid coach</h2>
 <%= "And my answer is... #{@answer}" %>
+
+<div class="row">
+  <div class="col-12 px-5">
+
+    <div class="mx-auto card p-1  d-flex justify-content-center flex-column card-chat rounded-0 rounded-end">
+      <div class="d-flex">
+        <img src="https://source.unsplash.com/random/500x500" alt="" class="img-card rounded-circle">
+        <div class="text-start">
+          <p class=""><%= "Your question is... #{@question}" %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto card p-1  d-flex justify-content-center flex-column card-chat rounded-0 rounded-end">
+      <div class="d-flex">
+        <img src="https://source.unsplash.com/random/500x500" alt="" class="img-card rounded-circle">
+        <div class="text-start">
+          <p class=""><%= "Your question is... #{@question}" %></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<%= link_to "Ask a new question", ask_path, class: "btn btn-success" %>
