@@ -1,9 +1,10 @@
 class QuestionsController < ApplicationController
   def ask
+    # Ask action
   end
 
   def answer
-    @question = params[:question]
+    @question = params[:question] || ''
     @answer = if @question.downcase == 'i am going to work'
                 'Great!'
               elsif @question.end_with? '?'

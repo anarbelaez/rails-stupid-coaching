@@ -1,29 +1,31 @@
-<h2 class="fst-italic fw-bold">Chat with your stupid coach</h2>
-<%= "And my answer is... #{@answer}" %>
-
 <div class="row">
-  <div class="col-12 px-5">
+  <div class="col-12">
 
-    <div class="mx-auto card p-1  d-flex justify-content-center flex-column card-chat rounded-0 rounded-end">
-      <div class="d-flex">
+    <div class="mx-auto my-4">
+      <h2 class="text-dark-gray fs-4 fw-bold"><span class="">Chat room</span></h2>
+    </div>
+
+    <div class="mx-auto card p-2 card-chat borded-0 mb-3">
+      <div class="d-flex align-items-center">
         <img src="https://source.unsplash.com/random/500x500" alt="" class="img-card rounded-circle">
-        <div class="text-start">
-          <p class=""><%= "Your question is... #{@question}" %></p>
+        <div class="px-3 text-start card-chat-body">
+          <h2 class="mb-1"><%= @question %></h2>
+          <p class="text-gray">- You</p>
         </div>
       </div>
     </div>
 
-    <div class="mx-auto card p-1  d-flex justify-content-center flex-column card-chat rounded-0 rounded-end">
-      <div class="d-flex">
-        <img src="https://source.unsplash.com/random/500x500" alt="" class="img-card rounded-circle">
-        <div class="text-start">
-          <p class=""><%= "Your question is... #{@question}" %></p>
+    <div class="mx-auto card p-2 card-chat mb-3">
+      <div class="d-flex align-items-center flex-row-reverse justify-content-between">
+        <img src="https://source.unsplash.com/random/600x600" alt="" class="img-card rounded-circle">
+        <div class="px-3 text-start card-chat-body">
+          <h2 class="mb-1"><%= @answer %></h2>
+          <p class="text-gray">- Your coach</p>
         </div>
       </div>
     </div>
+
+    <%= link_to "Send a new message", ask_path, class: "btn my-2 rounded-pill btn-yellow" %>
 
   </div>
-
 </div>
-
-<%= link_to "Ask a new question", ask_path, class: "btn btn-success" %>

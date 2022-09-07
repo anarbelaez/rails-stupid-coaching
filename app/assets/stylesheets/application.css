@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
 body {
-  color: black;
-  font-family: 'Verdana', serif;
+  color: rgb(30, 30, 30);
+  font-family: 'Poppins', sans-serif;
   background: rgb(75,207,250);
-  background: linear-gradient(180deg, rgba(75,207,250,1) 0%, rgba(140,219,201,1) 100%);;
+  background: linear-gradient(180deg, rgba(75,207,250,1) 0%, rgba(140,219,201,1) 100%);
 }
 
 h1 {
-  font-size: 75px;
+  font-family: 'Overlock', sans-serif;
+  font-size: 4.5em;
   font-weight: bold;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.207), 1px 1px 1px rgba(3, 0, 41, 0.176);
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 1.8em;
   letter-spacing: 2px;
-  color: rgb(24, 22, 22);
+}
+
+.text-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.text-dark-gray {
+  color: rgb(40, 40, 40);
+}
+
+.btn-yellow {
+  background-color: rgb(255, 255, 143);
+}
+
+.btn-yellow:hover {
+  background-color: rgb(255, 255, 109);
 }
 
 .input-no-shadow:focus {
@@ -24,15 +46,25 @@ h2 {
   box-shadow: 0 0 0 0;
 }
 
-.text-arial {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .img-card {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .card-chat {
-  width: 500px;
+  max-width: 400px;
+  border-radius: 15px;
+  border-color: transparent;
+  box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.3);
+}
+
+.card-chat-body h2 {
+  font-size: 0.9em;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.card-chat-body p {
+  font-size: 0.75em;
+  margin: 0;
 }
